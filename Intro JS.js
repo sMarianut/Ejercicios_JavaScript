@@ -73,13 +73,16 @@ console.log(textoAleatorio)
 // console.log("Tenemos la misma edad!" + " " + edadesIguales);
 
 
-let edad3 = prompt("Ingrese su edad:")
-let altura = prompt("Ingrese su altura:")
-let puedeSubir = edad3 > 6 && altura >= 120
-console.log("Puede subir porque" + " " + edad3 + " es mayor que 6 " + "y " + "Mide " + altura)
+// let edad3 = prompt("Ingrese su edad:")
+// let altura = prompt("Ingrese su altura:")
+// let puedeSubir = edad3 > 6 && altura >= 120
+// console.log("Puede subir porque" + " " + edad3 + " es mayor que 6 " + "y " + "Mide " + altura)
 
 
-
+// let pase = prompt("Ingrese su tipo de pase:")
+// let saldo = prompt("Ingrese su saldo:")
+// let puedePasar = pase === "VIP" && saldo >= 1000 
+// console.log(puedePasar)
 
 
 
