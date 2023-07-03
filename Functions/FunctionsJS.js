@@ -55,16 +55,48 @@
 // esMayorDeEdad()
 
 
-function calcularImpuesto(ingreso){
-    if(ingreso <= 10000){
-        ingreso = ingreso - (ingreso * 0.1)
-    }else if(ingreso > 10000 || ingreso <= 20000){
-ingreso = ingreso - (ingreso * 0.15)
-    }else if(ingreso > 20000){
-        ingreso = ingreso - (ingreso * 0.2)
+// function calcularImpuesto(ingreso){
+//     if(ingreso <= 10000){
+//         ingreso = ingreso - (ingreso * 0.1)
+//     }else if(ingreso > 10000 || ingreso <= 20000){
+// ingreso = ingreso - (ingreso * 0.15)
+//     }else if(ingreso > 20000){
+//         ingreso = ingreso - (ingreso * 0.2)
+//     }
+//     console.log(ingreso)
+// }
+// calcularImpuesto(22600)
+// calcularImpuesto(15000)
+// calcularImpuesto(9500)
+function calcularDia(){
+    let dia = prompt("Ingrese un numero del 1 al 7:")
+    let mensaje1 = "Es un dia laboral"
+    let mensaje2 = "Es fin de semana capo."
+    switch(dia){
+        case "1":
+            console.log(mensaje1);
+            break;
+        case "2":
+             console.log(mensaje1);
+             break;
+        case "3":
+             console.log(mensaje1);
+             break;
+        case "4":
+             console.log(mensaje1);
+             break;
+        case "5":
+             console.log(mensaje1);
+             break;
+        case "6":
+            console.log(mensaje2);
+            break;
+        case "7":
+            console.log(mensaje2);
+            break;
+        default:
+            console.log("Numero no valido rey!");
+            break;                  
     }
-    console.log(ingreso)
 }
-calcularImpuesto(22600)
-calcularImpuesto(15000)
-calcularImpuesto(9500)
+calcularDia()
