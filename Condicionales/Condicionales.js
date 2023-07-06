@@ -173,7 +173,7 @@ function adivinaAdivinador(){
 
 
 let edad4 = prompt("Ingrese su edad")
- function descubrir(){
+ function descubrirEdad(){
      if (edad4 <= 12){
          console.log("Eres un infante")
      }
@@ -190,79 +190,79 @@ let edad4 = prompt("Ingrese su edad")
          console.log("¿Realmente tienes esa edad?")
      }
  }
- descubrir()
+ descubrirEdad()
 
- let jugador1 = prompt("JUGADOR1 Ingrese piedra, papel o tijeras")
- let jugador2 = prompt("JUGADOR2 Ingrese piedra, papel o tijeras") 
- if (jugador1 == jugador2) {
+ let Player1 = prompt("Player 1 Ingrese piedra, papel o tijeras")
+ let Player2 = prompt("Player 2 Ingrese piedra, papel o tijeras") 
+ if (Player1 == Player 2) {
      console.log("EMPATE")
  } else {
-     if (jugador1 == "piedra" && jugador2 == "tijeras") {
-         console.log("GANADOR jugador1")
+     if (Player1 == "piedra" && Player2 == "tijeras") {
+         console.log("GANADOR Player 1")
      } else {
-         if (jugador1 == "papel" && jugador2 == "piedra") {
-             console.log("GANADOR jugador1")
+         if (Player1 == "papel" && Player2 == "piedra") {
+             console.log("GANADOR Player 1")
          } else {
-             if (jugador1 == "tiijeras" && jugador2 == "papel") {
-                 console.log("GANADOR jugador1")
+             if (Player1 == "tiijeras" && Player2 == "papel") {
+                 console.log("GANADOR Player 1")
              } else {
-                 console.log("GANADOR jugador2")
+                 console.log("GANADOR Player 2")
              }
          }
      }
  }
 
- function color(){
-  let color = prompt("Ingrese un color")
+ function colorScheme(){
+  let color = prompt("A ver, tira un color")
   switch (color){
       case"negro":
       case"blanco":
-      console.log("Falta de color")
+      console.log("? no tiene color")
       break
       case"verde":
-      console.log("El color de la naturaleza")
+      console.log("El color de la yerba")
       break
       case"azul":
-      console.log("El color del agua")
+      console.log("COMO EL MAR AZUUUL")
       break
       case"amarillo":
-      console.log("El color del sol")
+      console.log("Like the Sun, bue hablaba ingles")
       break
       case"rojo":
-      console.log("El color del fuego")
+      console.log("como el INDEPENDIENTE PA")
       break
       case"marron":
-      console.log("El color de la tierra")
+      console.log("RRONMA")
       break
-      default: console.log("Exelente eleccion, no lo teniamos pensado")
+      default: console.log("Ahre")
       break
   }
   }
   color()
   function IngresaDNI() {
-    let numero = prompt("Ingrese el número de DNI:");
-    let nombre = prompt("Ingrese su nombre:");
-    let afpellido = prompt("Ingrese su apellido:");
-    let fechaNacimiento = prompt("Ingrese su fecha de nacimiento:");
+    let numero = prompt("DNI capo?:");
+    let nombre = prompt("y como te llama?");
+    let apellido = prompt("Apellido tambien, rey");
+    let nacimiento = prompt("Edad?");
 
-    console.log("Número de DNI: " + numero);
-    console.log("Nombre: " + nombre);
+    console.log("Tu DNI: " + numero);
+    console.log("Tu Nombre crack: " + nombre);
     console.log("Apellido: " + apellido);
-    console.log("Fecha de nacimiento: " + fechaNacimiento);
+    console.log("Cuando naciste: " + nacimiento);
 
-    let confirmacion = prompt("¿Los datos ingresados son correctos?");
+    let confirmacion = prompt("Tas seguro senior?");
 
     if (confirmacion) {
       let dni = {
         numero: numero,
         nombre: nombre,
         apellido: apellido,
-        fechaNacimiento: fechaNacimiento
+        nacimiento: nacimiento
       }
-      console.log("Registro exitoso. Los datos ingresados son:");
+      console.log("Muy bien, te registraste genio");
       console.table(dni);
     } else {
-      console.log("Vuelva a intentarlo en 1 mes.");
+      console.log("Volve en un mes, no te banco mas");
     }
   }
 
