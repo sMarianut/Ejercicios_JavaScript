@@ -24,10 +24,10 @@ let i = 0
 
 
 
-    let ultNum = numArray[numArray.length - 1]
+    let ultNum = arrayNum[arrayNum.length - 1]
 console.log(`El ultimo numero ingresado fue ${ultNum}`)
 
-let numeroIngresado = Number(prompt("Ingrese su numero para adivinar"))
+let numeroIngresado = parseInt(prompt("Ingrese su numero para adivinar"))
 let contador = 1
 if (numeroIngresado == null || numeroIngresado == " ") {
     alert("No ingresaste un numero")
@@ -35,11 +35,11 @@ if (numeroIngresado == null || numeroIngresado == " ") {
     while (numeroIngresado != ultNum && numeroIngresado >= 1 && numeroIngresado <= 100) {
         contador++
         if (numeroIngresado > ultNum) {
-            alert("Es mas grande")
+            alert("ete, ete e ma' grande")
         } else {
-            alert("Es mas chico")
+            alert("ete, e ma' chico")
         }
-        numeroIngresado = parseInt(prompt("Ingrese un numero para adivinar"))
+        numeroIngresado = parseInt(prompt("Tirame un numero, a ver si adivinas"))
     }
     alert(Ganaste en ${contador} intentos)
 }
